@@ -18,3 +18,13 @@ consonantes="bcdfghjklmnñpqrstvwxyzBCDFGHJKLMNÑPQRSTVWXYZ"
 con_nombre=""
 con_apellido=""
 clave=""
+
+c=1
+for char in nombre:
+    if char in consonantes:
+        if c<=2:
+            con_nombre+=char
+        c+=1
+
+while len(con_nombre)<2:  #si las consonantes no llegan a dos, agrega un guión bajo.
+    con_nombre+="_"
