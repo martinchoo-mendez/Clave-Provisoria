@@ -12,6 +12,8 @@
 #V_RD45
 #L_R_71
 
+import random
+
 nombre=input("por favor, ingrese su nombre: ")
 apellido=input("por favor, ingrese su apellido: ")
 consonantes="bcdfghjklmnñpqrstvwxyzBCDFGHJKLMNÑPQRSTVWXYZ"
@@ -38,3 +40,9 @@ for letra in apellido:
 
 while len(con_apellido)<2:
     con_apellido+="_"
+
+num1=random.randint(0,9)
+num2=random.randint(0,9)
+
+while num1==num2:
+    num2=random.randint(0,9)
