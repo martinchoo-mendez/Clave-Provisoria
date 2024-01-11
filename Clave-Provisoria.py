@@ -25,7 +25,7 @@ c=1
 for char in nombre:
     if char in consonantes:
         if c<=2:
-            con_nombre+=char
+            con_nombre+=char.upper()
         c+=1
 
 while len(con_nombre)<2:  #si las consonantes no llegan a dos, agrega un guión bajo.
@@ -35,7 +35,7 @@ c=1
 for letra in apellido:
     if letra in consonantes:
         if c<=2:
-            con_apellido+=letra
+            con_apellido+=letra.upper()
         c+=1
 
 while len(con_apellido)<2:
@@ -46,3 +46,6 @@ num2=random.randint(0,9)
 
 while num1==num2:
     num2=random.randint(0,9)
+
+clave=con_nombre + con_apellido + str(num1) + str(num2)
+print(clave)
