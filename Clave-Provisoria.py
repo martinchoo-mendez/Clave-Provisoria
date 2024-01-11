@@ -11,3 +11,10 @@
 #Ejemplos: RSPR20
 #V_RD45
 #L_R_71
+
+nombre=input("por favor, ingrese su nombre: ")
+apellido=input("por favor, ingrese su apellido: ")
+consonantes="bcdfghjklmnñpqrstvwxyzBCDFGHJKLMNÑPQRSTVWXYZ"
+con_nombre=""
+con_apellido=""
+clave=""
