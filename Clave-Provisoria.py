@@ -28,3 +28,13 @@ for char in nombre:
 
 while len(con_nombre)<2:  #si las consonantes no llegan a dos, agrega un guión bajo.
     con_nombre+="_"
+
+c=1
+for letra in apellido:
+    if letra in consonantes:
+        if c<=2:
+            con_apellido+=letra
+        c+=1
+
+while len(con_apellido)<2:
+    con_apellido+="_"
